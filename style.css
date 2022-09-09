@@ -1,0 +1,15 @@
+header nav,
+header nav ul, 
+header nav ul li{
+  display: inline;
+}
+
+section {
+  height: 100vh;
+  background-color: dodgerblue;
+}
+
+main > section:nth-child(even) {
+  background-color: gold;
+}
+

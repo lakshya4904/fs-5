@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'poppinsregular';
+  src: url('./assets/fonts/poppins-regular-webfont.woff2') format('woff2'),
+       url('./assets//fonts/poppins-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
 header nav,
 header nav ul, 
 header nav ul li{
@@ -12,4 +20,54 @@ section {
 main > section:nth-child(even) {
   background-color: gold;
 }
+
+
+h2 {
+  font-size: 48px;
+  font-family: 'Merriweather', serif;
+}
+
+p {
+  font-family: 'poppinsregular', sans-serif;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  section {
+    background-color: greenyellow;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section {
+    background-color: aquamarine;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  section {
+    background-color: blueviolet;
+  }
+}
+
+@media print {
+  section {
+    background-color: #fff;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* a {
+  font-size: 12px;
+  font-weight: 900;
+  font-style: italic;
+} */
 

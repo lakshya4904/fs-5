@@ -12,15 +12,24 @@
   --Neutral-color-600: #777990;
   --Neutral-color-700: #4e4b66;
   --Neutral-color-800: #14142b;
+  -sm-space: 0.5rem;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("./assets/fonts/satoshi-regular-webfont.woff2") format("woff2"),
+    url("./assets/fonts/satoshi-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
+  font-family: Satoshi, sans-serif;
   font-size: 1.125rem;
   line-height: 1.777em;
   font-weight: 500;
   color: var(--Neutral-color-600);
 }
-
 
 h1 {
   font-size: 3.77em;
@@ -66,7 +75,7 @@ h6 {
 
 p.small {
   font-size: 15px;
-  line-height: 1.600em;
+  line-height: 1.6em;
 }
 
 p.large {
@@ -76,13 +85,18 @@ p.large {
 
 a {
   color: var(--Neutral-color-800);
+  text-decoration: none;
   transition: color 300ms ease;
 }
 
 a:hover {
   color: var(--Neutral-color-600);
+  
 }
 
+a:hover > svg > path {
+  stroke: var(--Neutral-color-600);
+}
 
 strong {
   color: var(--Neutral-color-800);
@@ -154,7 +168,7 @@ figcaption {
 
 .btn.seconday:hover > svg {
   fill: var(--Neutral-color-200);
-} 
+}
 
 .round {
   height: 48px;
@@ -182,3 +196,39 @@ figcaption {
   font-size: 16px;
   line-height: 18px;
 }
+
+
+/* header style */
+
+.header {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #fff;
+
+  & .header__wrapper {
+    background-color: red;
+  }
+}
+
+
+/* .header .header__logo {
+  transition: translate 300ms ease;
+}
+
+.header .header__logo:hover {
+  translate: 0 -4px;
+}
+
+.header nav > ul {
+  padding: 0;
+  margin: 0;
+}
+
+.header nav > ul > li {
+  list-style: none;
+} */
+
+
+
+
+

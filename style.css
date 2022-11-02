@@ -1,15 +1,234 @@
-header nav,
-header nav ul, 
-header nav ul li{
-  display: inline;
+:root {
+  --primary-color: #fff;
+  --secondary-color-1: #ebf8ff;
+  --secondary-color-2: #fff5d2;
+  --secondary-color-3: #f3fbff;
+  --secondary-color-4: #f3eeff;
+  --Neutral-color-100: #ffffff;
+  --Neutral-color-200: #f6f7ff;
+  --Neutral-color-300: #eff0f6;
+  --Neutral-color-400: #d9dbe9;
+  --Neutral-color-500: #b2b4c4;
+  --Neutral-color-600: #777990;
+  --Neutral-color-700: #4e4b66;
+  --Neutral-color-800: #14142b;
+  -sm-space: 0.5rem;
 }
 
-section {
-  height: 100vh;
-  background-color: dodgerblue;
+@font-face {
+  font-family: "Satoshi";
+  src: url("./assets/fonts/satoshi-regular-webfont.woff2") format("woff2"),
+    url("./assets/fonts/satoshi-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
-main > section:nth-child(even) {
-  background-color: gold;
+body {
+  font-family: Satoshi, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.777em;
+  font-weight: 500;
+  color: var(--Neutral-color-600);
 }
+
+h1 {
+  font-size: 3.77em;
+  line-height: 1.3em;
+  font-weight: 700;
+  color: var(--Neutral-color-800);
+}
+
+h2 {
+  font-size: 42px;
+  line-height: 1.38em;
+  font-weight: 700;
+  color: var(--Neutral-color-800);
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 1.333em;
+  font-weight: 700;
+  color: var(--Neutral-color-800);
+}
+
+h4 {
+  font-size: 22px;
+  line-height: 1.272em;
+  font-weight: 700;
+  color: var(--Neutral-color-800);
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 1.333em;
+  font-weight: 700;
+  color: var(--Neutral-color-800);
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 1.375em;
+  font-weight: 700;
+  color: var(--Neutral-color-800);
+}
+
+p.small {
+  font-size: 15px;
+  line-height: 1.6em;
+}
+
+p.large {
+  font-size: 22px;
+  line-height: 1.818em;
+}
+
+a {
+  color: var(--Neutral-color-800);
+  text-decoration: none;
+  transition: color 300ms ease;
+}
+
+a:hover {
+  color: var(--Neutral-color-600);
+  
+}
+
+a:hover > svg > path {
+  stroke: var(--Neutral-color-600);
+}
+
+strong {
+  color: var(--Neutral-color-800);
+  font-weight: 700;
+}
+
+blockquote {
+  padding: 38px 91px;
+  border-left: 0px none #000;
+  border-radius: 24px;
+  background-color: var(--secondary-color-1);
+  color: var(--Neutral-color-700);
+  font-size: 22px;
+  line-height: 1.818em;
+  text-align: center;
+}
+
+img {
+  border-radius: 24px;
+}
+
+figure {
+  text-align: center;
+}
+
+figcaption {
+  color: var(--Neutral-color-500);
+}
+
+.btn {
+  border-style: none;
+  padding: 24px 60px;
+  background-color: var(--Neutral-color-800);
+  color: var(--Neutral-color-100);
+  border-radius: 80px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+.btn > svg {
+  fill: var(--Neutral-color-100);
+}
+
+.btn:hover {
+  background-color: var(--Neutral-color-200);
+  color: var(--Neutral-color-800);
+  transform: translate3d(0px, -6px, 0.01px);
+}
+
+.btn:hover > svg {
+  fill: var(--Neutral-color-800);
+}
+
+.btn.seconday {
+  background-color: var(--Neutral-color-200);
+  color: var(--Neutral-color-800);
+}
+
+.btn.seconday > svg {
+  fill: var(--Neutral-color-800);
+}
+
+.btn.seconday:hover {
+  background-color: var(--Neutral-color-800);
+  color: var(--Neutral-color-200);
+}
+
+.btn.seconday:hover > svg {
+  fill: var(--Neutral-color-200);
+}
+
+.round {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.round > svg {
+  height: 60%;
+  width: 60%;
+}
+
+.btn--large {
+  padding: 20px 68px;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.btn--small {
+  padding: 14px 32px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+
+/* header style */
+
+.header {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #fff;
+
+  & .header__wrapper {
+    background-color: red;
+  }
+}
+
+
+/* .header .header__logo {
+  transition: translate 300ms ease;
+}
+
+.header .header__logo:hover {
+  translate: 0 -4px;
+}
+
+.header nav > ul {
+  padding: 0;
+  margin: 0;
+}
+
+.header nav > ul > li {
+  list-style: none;
+} */
+
+
+
+
 
